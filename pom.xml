@@ -19,7 +19,7 @@
         </dependency>
     </dependencies>
 
-    <!-- 💡ファイル名を固定する設定もしっかり入っています -->
+    <!-- ファイル名を固定する設定もしっかり入っています -->
     <build>
         <finalName>rakuten-bank-app</finalName>
     </build>
