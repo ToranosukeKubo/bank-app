@@ -16,8 +16,8 @@ public class AccountResource {
     @Produces(MediaType.APPLICATION_JSON)
     public String getBalance() {
         String url = "jdbc:mysql://mysql:3306/bankdb?useSSL=false&allowPublicKeyRetrieval=true";
-        String user = "root";
-        String password = "password";
+        String user = System.getenv("DB_USER") != null ? System.getenv("DB_USER") : "root";
+        String password = System.getenv("DB_PASSWORD");
 
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
