@@ -17,9 +17,14 @@
             <version>10.0.0</version>
             <scope>provided</scope>
         </dependency>
+        <dependency>
+            <groupId>com.mysql</groupId>
+            <artifactId>mysql-connector-j</artifactId>
+            <version>8.0.33</version> <!-- バージョンは何でもOKです -->
+        </dependency>
     </dependencies>
 
-    <!-- 💡ファイル名を固定する設定もしっかり入っています -->
+    <!-- ファイル名を固定する設定もしっかり入っています -->
     <build>
         <finalName>rakuten-bank-app</finalName>
     </build>
